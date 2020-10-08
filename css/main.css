@@ -194,11 +194,11 @@
   }
   .twitter_twitts {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
   .twitter_twitts_window {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 120px;
+    margin-left: 120px;
     margin: 0 auto;
   }
   .news {
@@ -224,9 +224,6 @@
   .news_block_left {
     text-align: center;
     padding: 0;
-  }
-  .news_block_right {
-    display: none;
   }
   .free_btn {
     -webkit-box-align: center;
@@ -342,7 +339,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
-    padding: 50px;
+    padding: 10px;
   }
   .privilege_block {
     margin: 0 auto;
@@ -399,6 +396,50 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #news_img_1 {
+    width: 50%;
+  }
+  .news {
+    overflow: hidden;
+  }
+  .news_block_left {
+    width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  .wrap {
+    max-width: 300px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .news_block_right {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .news_block_right_info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 500px;
+  }
+  .news_block_right_info_bar {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  #news_info {
+    width: 70%;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+  }
   .footer .between-2 {
     margin: 0 auto;
     -webkit-box-pack: center;
@@ -418,6 +459,41 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 490px) {
+  .price {
+    margin: 0;
+    padding: 0;
+  }
+  .price .btn-right, .price .btn-left {
+    width: 80px;
+  }
+  .price_block {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  .privilege .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .privilege .container_privelege {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .privilege_block {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+  }
+  .twitter_twitts_window {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -567,7 +643,7 @@ ul li {
   color: #fff;
   -webkit-border-radius: 40px;
           border-radius: 40px;
-  border: 1px solid #0063dd;
+  border: 2px solid #0063dd;
 }
 
 .btn:hover {
@@ -590,7 +666,6 @@ ul li {
 .btn-left {
   -webkit-border-radius: 0px 40px 40px 0px;
           border-radius: 0px 40px 40px 0px;
-  margin-left: 2px;
 }
 
 .between {
@@ -878,8 +953,8 @@ ul li {
 }
 
 .price_block {
-  width: 320px;
-  height: 500px;
+  width: 360px;
+  height: 570px;
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -895,8 +970,8 @@ ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 0;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .price_block_content {
@@ -924,9 +999,13 @@ ul li {
   padding-bottom: 20px;
 }
 
+.block_plan {
+  max-width: 320px;
+}
+
 .shadow {
-  -webkit-box-shadow: 0 0 30px 10px #ddd;
-          box-shadow: 0 0 30px 10px #ddd;
+  -webkit-box-shadow: 0 0 30px 10px #deecfd;
+          box-shadow: 0 0 30px 10px #deecfd;
 }
 
 .line_low {
@@ -1121,12 +1200,6 @@ ul li {
   padding-top: 50px;
 }
 
-.news_block .wrap {
-  width: 555px;
-  padding-top: 20px;
-  line-height: 25px;
-}
-
 .news_block_left {
   text-align: left;
   padding-right: 50px;
@@ -1149,12 +1222,18 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
-  text-align-last: left;
+  text-align: left;
 }
 
 .news_block_right_info_bar {
   margin-top: -15px;
   margin-left: 30px;
+}
+
+.wrap {
+  width: 555px;
+  padding-top: 20px;
+  line-height: 25px;
 }
 
 .free_btn {

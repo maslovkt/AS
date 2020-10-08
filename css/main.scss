@@ -95,7 +95,7 @@ ul {
     background-color: #0063dd;
     color: #fff;
     border-radius: 40px;
-    border: 1px solid #0063dd;
+    border: 2px solid #0063dd;
     &:hover {
         background-color: #fff;
         color: #0063dd;
@@ -109,7 +109,6 @@ ul {
     }
     &-left {
         border-radius: 0px 40px 40px 0px;
-        margin-left: 2px;
     }
 }
 .between {
@@ -276,15 +275,15 @@ ul {
     align-items: center;
 
     &_block {
-        width: 320px;
-        height: 500px;
+        width: 360px;
+        height: 570px;
         background-color: #fff;
         display: flex;
         justify-content: center;
         flex-direction: column;
         z-index: 0;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
         &_content {
             display: flex;
             justify-content: center;
@@ -298,8 +297,11 @@ ul {
         }
     }
 }
+.block_plan {
+    max-width: 320px;
+}
 .shadow {
-    box-shadow: 0 0 30px 10px #ddd;
+    box-shadow: 0 0 30px 10px #deecfd;
 }
 .line_low {
     width: 150px;
@@ -411,12 +413,6 @@ ul {
         margin: 0 auto;
         padding-top: 50px;
 
-        .wrap {
-            width: 555px;
-            padding-top: 20px;
-            line-height: 25px;
-        }
-
         &_left {
             text-align: left;
             padding-right: 50px;
@@ -437,7 +433,7 @@ ul {
             &_info {
                 display: flex;
                 padding-bottom: 20px;
-                text-align-last: left;
+                text-align: left;
 
                 &_bar {
                     margin-top: -15px;
@@ -446,6 +442,11 @@ ul {
             }
         }
     }
+}
+.wrap {
+    width: 555px;
+    padding-top: 20px;
+    line-height: 25px;
 }
 
 .free_btn {
