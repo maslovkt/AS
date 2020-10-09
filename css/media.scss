@@ -1,3 +1,10 @@
+@media (max-height: 600px) {
+    .device {
+        display: none;
+    }
+}
+
+
 @media (max-width: 1450px) {
     .price {
         width: 80%;
@@ -33,17 +40,28 @@
         height: 30px;
         width: 120px;
     }
+
     #logo {
         width: 70%;
     }
+
     .function {
         width: 80%;
         height: 100%;
         padding: 20px;
         margin: 0 auto;
     }
+    .privilege {
+        height: 100%;
+        padding: 50px;
+    }
     .privilege_block_center {
         margin: 0;
+    }
+    .order {
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
     #screen3 {
         width: 50%;
@@ -53,6 +71,9 @@
         height: 100%;
         text-align: center;
         padding-bottom: 100px;
+        .block_plan {
+            height: 300px;
+        }
         .between-2 {
             margin: 0 auto;
         }
@@ -130,7 +151,7 @@
     
     .content_header {
         height: 100vh;
-        margin: 0;
+        margin-top: 0;
         padding: 0;
         display: flex;
         align-items: center;
@@ -140,8 +161,16 @@
     .visibl {
         display: none !important;
     }
+    .privilege {
+        &_block {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+    
     .function {
         width: 100%;
+        height: 100%;
         padding: 0;
         margin: 0;
     }
@@ -302,7 +331,7 @@
 
 @media (max-width: 490px) {
     .price {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         .btn-right, .btn-left {
             width: 80px;
@@ -331,8 +360,13 @@
         margin: 0 auto;
     }
     .twitter_twitts_window {
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 5px;
+        width: 90%;
+    }
+
+    .footer_box {
+        width: 280px;
     }
 }

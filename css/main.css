@@ -106,12 +106,21 @@
   padding: 0;
 }
 
+@media (max-height: 600px) {
+  .device {
+    display: none;
+  }
+}
+
 @media (max-width: 1450px) {
   .price {
-    width: 100%;
+    width: 80%;
   }
   #screen3 {
     width: 90%;
+  }
+  #device {
+    max-width: 900px;
   }
 }
 
@@ -147,8 +156,17 @@
     padding: 20px;
     margin: 0 auto;
   }
+  .privilege {
+    height: 100%;
+    padding: 50px;
+  }
   .privilege_block_center {
     margin: 0;
+  }
+  .order {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
   #screen3 {
     width: 50%;
@@ -162,6 +180,9 @@
     height: 100%;
     text-align: center;
     padding-bottom: 100px;
+  }
+  .price .block_plan {
+    height: 300px;
   }
   .price .between-2 {
     margin: 0 auto;
@@ -185,6 +206,10 @@
   }
   .twitter_twitts {
     margin: 0 auto;
+  }
+  .news_block_right {
+    margin-top: 70px;
+    text-align: center;
   }
   .linebtn {
     -webkit-box-pack: center;
@@ -256,7 +281,7 @@
   }
   .content_header {
     height: 100vh;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -271,8 +296,13 @@
   .visibl {
     display: none !important;
   }
+  .privilege_block {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
   .function {
     width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
   }
@@ -292,6 +322,10 @@
   }
   .price .row .price_block {
     padding: 10px;
+  }
+  .news_block_right {
+    margin-top: 70px;
+    text-align: center;
   }
   .footer {
     height: 100%;
@@ -344,6 +378,7 @@
   .privilege_block {
     margin: 0 auto;
     margin-top: 10px;
+    width: 200px;
   }
   .privilege .container {
     display: -webkit-box;
@@ -406,6 +441,8 @@
     width: 300px;
     max-width: 300px;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
   }
   .wrap {
     max-width: 300px;
@@ -440,6 +477,9 @@
                 -ms-grid-row-align: center;
             align-self: center;
   }
+  .footer_box {
+    width: 100%;
+  }
   .footer .between-2 {
     margin: 0 auto;
     -webkit-box-pack: center;
@@ -464,7 +504,7 @@
 
 @media (max-width: 490px) {
   .price {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .price .btn-right, .price .btn-left {
@@ -491,9 +531,13 @@
     margin: 0 auto;
   }
   .twitter_twitts_window {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+  }
+  .footer_box {
+    width: 280px;
   }
 }
 
@@ -639,16 +683,16 @@ ul li {
   width: 160px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #0063dd;
+  background-color: #0f7bff;
   color: #fff;
   -webkit-border-radius: 40px;
           border-radius: 40px;
-  border: 2px solid #0063dd;
+  border: 2px solid #0f7bff;
 }
 
 .btn:hover {
   background-color: #fff;
-  color: #0063dd;
+  color: #0f7bff;
   -webkit-transition: .25s;
   -o-transition: .25s;
   transition: .25s;
@@ -722,8 +766,7 @@ ul li {
 
 #device {
   height: auto;
-  max-width: 640px;
-  width: 100%;
+  width: 42%;
   bottom: 0;
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
@@ -754,7 +797,15 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 40%;
 }
 
 .content_header h1 {
@@ -765,6 +816,7 @@ ul li {
   max-width: 700px;
   margin: 0 auto;
   z-index: 3;
+  color: #929292;
 }
 
 .content_header .btn {
@@ -1260,8 +1312,9 @@ ul li {
 }
 
 .free_btn .btn {
-  width: 200px;
-  height: 80px;
+  width: 260px;
+  height: 70px;
+  background-color: #0f7bff;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   font-size: 16px;
@@ -1306,6 +1359,22 @@ ul li {
   background-color: #0f7bff;
 }
 
+.footer input.btn-right::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.footer input.btn-right:-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer input.btn-right::-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer input.btn-right::placeholder {
+  color: #fff;
+}
+
 .footer h1 {
   color: #fff;
 }
@@ -1348,7 +1417,7 @@ ul li {
   height: 52px;
   background-color: #fff;
   border: 2px solid #fff;
-  color: #0f7bff;
+  color: #7b828a;
   font-size: 14px;
   width: 180px;
   padding: 0;
