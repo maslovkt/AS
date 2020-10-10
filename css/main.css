@@ -1504,3 +1504,9 @@ ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+#arrow_up {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+}
